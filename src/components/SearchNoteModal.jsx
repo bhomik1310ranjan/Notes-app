@@ -30,7 +30,7 @@ function SearchNoteModal({ show, hideModalHandler }) {
                 onClick={closeHandler}
             ></div>
             <div
-                className={`w-11/12 md:w-10/12 max-w-xl flex flex-col gap-y-3 bg-white rounded-xl absolute left-1/2 top-1/2 z-20 -translate-x-1/2 ${
+                className={`w-11/12 md:w-10/12 max-w-xl max-h-sixtyVH sm:max-h-eightyVH flex flex-col gap-y-3 bg-white rounded-xl absolute left-1/2 top-1/2 z-20 -translate-x-1/2 ${
                     show
                         ? "opacity-100 pointer-events-auto -translate-y-1/2"
                         : "opacity-0 pointer-events-none -translate-y-1/4"
@@ -54,12 +54,12 @@ function SearchNoteModal({ show, hideModalHandler }) {
                     </button>
                 </div>
                 {filteredNotes.length > 0 ? (
-                    <div className="h-sixtyVH flex flex-col overflow-x-hidden overflow-y-auto">
+                    <div className="flex flex-col overflow-x-hidden overflow-y-auto">
                         {filteredNotes.map((note) => (
                             <Link
                                 key={note.noteID}
                                 to={`/edit-note/${note.noteID}`}
-                                className="bg-transparent hover:bg-lightGrayishBlue rounded-md transition-colors duration-300 px-3 py-1"
+                                className="bg-transparent hover:bg-lightGrayishBlue rounded-md transition-colors duration-300 px-3 py-1 mr-1"
                             >
                                 <h3 className="text-lg tracking-wider leading-tight">
                                     {note.noteTitle.length > 40
@@ -74,7 +74,7 @@ function SearchNoteModal({ show, hideModalHandler }) {
                         ))}
                     </div>
                 ) : (
-                    <div className="h-sixtyEightVH flex justify-center items-center overflow-x-hidden overflow-y-auto">
+                    <div className="overflow-x-hidden overflow-y-auto">
                         <NoNotesFound />
                     </div>
                 )}

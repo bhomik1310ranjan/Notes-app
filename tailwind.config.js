@@ -10,9 +10,9 @@ export default {
             fontFamily: {
                 rubik: ["Rubik", "sans-serif"],
             },
-            height: {
+            maxHeight: {
                 sixtyVH: "60vh",
-                sixtyEightVH: "68vh",
+                eightyVH: "80vh",
             },
         },
     },
