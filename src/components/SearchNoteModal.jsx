@@ -30,7 +30,7 @@ function SearchNoteModal({ show, hideModalHandler }) {
                 onClick={closeHandler}
             ></div>
             <div
-                className={`w-11/12 md:w-10/12 max-w-xl max-h-sixtyVH sm:max-h-eightyVH flex flex-col gap-y-3 bg-white rounded-xl absolute left-1/2 top-1/2 z-20 -translate-x-1/2 ${
+                className={`w-11/12 md:w-10/12 max-w-xl max-h-sixtyVH flex flex-col gap-y-3 bg-white rounded-xl absolute left-1/2 top-1/2 z-20 -translate-x-1/2 ${
                     show
                         ? "opacity-100 pointer-events-auto -translate-y-1/2"
                         : "opacity-0 pointer-events-none -translate-y-1/4"

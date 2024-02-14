@@ -45,7 +45,7 @@ function Home() {
                 </div>
             </header>
             {notes.length > 0 ? (
-                <div className="w-11/12 md:w-10/12 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 py-6">
+                <div className="w-11/12 md:w-10/12 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 pb-6">
                     {notes.map((note, index) => (
                         <NoteItem
                             key={note.noteID}

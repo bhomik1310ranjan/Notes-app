@@ -12,7 +12,6 @@ export default {
             },
             maxHeight: {
                 sixtyVH: "60vh",
-                eightyVH: "80vh",
             },
         },
     },

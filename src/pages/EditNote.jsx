@@ -94,7 +94,7 @@ function EditNote() {
                     </button>
                 </div>
             </header>
-            <div className="w-11/12 md:w-10/12 max-w-7xl mx-auto flex flex-col gap-y-4 py-6">
+            <div className="w-11/12 md:w-10/12 max-w-7xl mx-auto flex flex-col gap-y-4 pb-6">
                 <input
                     type="text"
                     placeholder="Title"
