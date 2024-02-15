@@ -5,7 +5,7 @@ function NoteItem({ note, noteItemColor }) {
         <Link
             to={`/edit-note/${note.noteID}`}
             style={{ backgroundColor: noteItemColor }}
-            className="flex flex-col justify-between gap-y-5 rounded-lg p-4"
+            className="flex flex-col justify-between gap-y-5 rounded-lg hover:scale-105 transition-transform duration-300 p-4"
         >
             <h2 className="text-2xl">
                 {note.noteTitle.length > 40
